@@ -1,0 +1,10 @@
+name 'puppet-zenoss'
+version '0.1.0'
+source 'git://github.com/steelhouselabs/puppet-zenoss.git'
+author 'Thomas Vincent'
+description 'Zenoss support for Puppet'
+summary 'Zenoss support for Puppet'
+license 'GPLv2'
+project_page 'https://github.com/thomasvincent/puppet-zenoss'
+
+dependency 'puppetlabs/stdlib', '>=4.0.0'
