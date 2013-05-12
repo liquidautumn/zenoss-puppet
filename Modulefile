@@ -1,10 +1,10 @@
-name 'puppet-zenoss'
+name 'zenoss-puppet'
 version '0.1.0'
-source 'git://github.com/steelhouselabs/puppet-zenoss.git'
+source 'git://github.com/steelhouselabs/zenoss-puppet.git'
 author 'Thomas Vincent'
 description 'Zenoss support for Puppet'
 summary 'Zenoss support for Puppet'
 license 'GPLv2'
-project_page 'https://github.com/thomasvincent/puppet-zenoss'
+project_page 'https://github.com/thomasvincent/zenoss-puppet'
 
 dependency 'puppetlabs/stdlib', '>=4.0.0'

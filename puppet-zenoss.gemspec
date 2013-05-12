@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'puppet-zenoss/version'
+require 'zenoss-puppet/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "puppet-zenoss"
-  gem.version       = Puppet::Zenoss::VERSION
+  gem.name          = "zenoss-puppet"
+  gem.version       = Zenoss::Puppet::VERSION
   gem.authors       = ["Thomas Vincent"]
   gem.email         = ["thomasvincent@steelhouselabs.com"]
   gem.description   = %q{Configure Zenoss via Puppet}
