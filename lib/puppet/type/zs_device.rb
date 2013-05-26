@@ -1,3 +1,5 @@
+require 'lib/zenoss/device'
+
 Puppet::Type.newtype(:zs_device) do
   @doc = "Manage Zenoss devices."
 
@@ -15,16 +17,11 @@ Puppet::Type.newtype(:zs_device) do
     end
   end
 
-  newparam(:name, :namevar=>true) do
-    desc "Device IP address or domain name."
-    newvalues(/^[[:alpha:][:digit:]\.]+$/)
-  end
-
-  newparam(:device_class) do
-    desc "Zenoss device."
-  end
-
-  newparam(:title) do
-    desc "Device title."
+  Zenoss::Device::PARAMS.each do |name, options|
+    #TODO implement boolean-specific boolean: true newparam option, Puppet type proxies and validation
+    newparam(name, :namevar => options[:namevar]) do
+      desc options[:description]
+      required
+    end
   end
 end

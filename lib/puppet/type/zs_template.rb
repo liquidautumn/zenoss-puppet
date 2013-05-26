@@ -13,5 +13,13 @@ Puppet::Type.newtype(:zs_template) do
     newvalue(:absent) do
       provider.destroy
     end
+
+    Zenoss::Template::PARAMS.each do |name, options|
+      #TODO implement boolean-specific boolean: true newparam option, Puppet type proxies and validation
+      newparam(name, :namevar => options[:namevar]) do
+        desc options[:description]
+        required
+      end
+    end
   end
 end

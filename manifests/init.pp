@@ -1,3 +1,3 @@
-#class zenoss ($version = $::zenoss_default_version) {
-#
-#}
+class zenoss ($version = $::zenoss_default_version) {
+
+}

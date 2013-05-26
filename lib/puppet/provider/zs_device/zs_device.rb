@@ -46,10 +46,10 @@ Puppet::Type.type(:zs_device).provide(:zs_device, :parent => Puppet::Provider::Z
   #  end
   #end
   #
-  #methods = [ 'dynamic_ratio',
-  #            'ratio',
-  #            'screen_name',
-  #            'session_enabled_state']
+  methods = [ 'dynamic_ratio',
+              'ratio',
+              'screen_name',
+              'session_enabled_state']
   #
   #methods.each do |method|
   #  define_method(method.to_sym) do

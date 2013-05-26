@@ -1,9 +1,5 @@
-#naive approach for now, should provide from external source
-#$zenoss::user = "apiuser"
-#$zenoss::password = "pass"
-
-zs_device { '192.168.1.100':
-  device_class => '/Printer',
+zs_device { '192.168.1.216':
+  deviceClass => '/Printer',
   title => 'Canon C1000',
   #snmp_community => '',
 #  snmp_port => 161,
